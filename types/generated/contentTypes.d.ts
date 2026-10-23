@@ -626,14 +626,17 @@ export interface ApiMaquinaMaquina extends Struct.CollectionTypeSchema {
     interno: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
+    latitud: Schema.Attribute.Decimal;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::maquina.maquina'
     > &
       Schema.Attribute.Private;
+    longitud: Schema.Attribute.Decimal;
     marca: Schema.Attribute.String & Schema.Attribute.Required;
     modelo: Schema.Attribute.String & Schema.Attribute.Required;
+    precio_alquiler: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     tipo: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
