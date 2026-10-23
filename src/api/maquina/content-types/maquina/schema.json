@@ -35,6 +35,15 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "precio_alquiler": {
+      "type": "integer"
+    },
+    "latitud": {
+      "type": "decimal"
+    },
+    "longitud": {
+      "type": "decimal"
     }
   }
 }
